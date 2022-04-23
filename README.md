@@ -16,7 +16,7 @@ pipeline {
                 steps {
                     script {
                         def mvnHome = tool 'MAVEN_HOME'
-                        bat "${mvnHome}\\bin\\mvn -B verify"
+                        bat "${mvnHome}\\bin\\mvn -B -e verify"
                     }
                 }
             }
